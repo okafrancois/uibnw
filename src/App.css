@@ -10,9 +10,13 @@
   padding: 0;
 }
 
-button, a, ul, li{
+button, a, ul, li, input{
   background: none;
   list-style-type: none;
   color: inherit;
   border: none;
+}
+
+button:focus, a:focus, input:focus{
+  outline: none;
 }

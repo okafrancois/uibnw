@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Dashboard from "./components/Dashbord/Dashboard";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (

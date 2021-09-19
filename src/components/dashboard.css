@@ -1,0 +1,250 @@
+.dash__container{
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.user-menu img{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    padding-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.resume{
+    justify-self: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 650px;
+    min-width: 45vw;
+}
+
+.details{
+    margin-left: 4rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+
+.notification{
+    position: relative;
+    margin: 0 1rem 0 1.5rem;
+}
+
+.notification img{
+    height: 25px;
+    width: 25px;
+}
+
+.notification .number{
+    position: absolute;
+    background: red;
+    height: 13px;
+    width: 13px;
+    color: #fff;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    position: relative;
+    background: var(--gray-bg);
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar img{
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search-bar input{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.user-menu{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+    height: 35px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+.hello-card{
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hello__content{
+    background: var(--gray-bg);
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello__title{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.hello__text{
+    font-size: 14px;
+}
+
+.hello__illustration{
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
+.lang-slider{
+    margin-top: 1rem;
+}
+
+.number-stats{
+    margin-top: 1rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-stats > div {
+    background: var(--gray-bg);
+    width: 45%;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.number-stats > div .number{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.number-stats > div .text{
+    margin-left: 0.5rem;
+}
+
+.graph-stats{
+    margin-top: 1.5rem;
+}
+
+.graph-stats .filters{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    position: relative;
+}
+
+.graph-stats .filters li{
+   margin-right: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.graph-stats .filters li.active, .graph-stats .filters li:hover{
+    color: var(--primary-color);
+}
+
+.graph-stats .filters .date-filter{
+    color: var(--primary-color);
+    background: var(--gray-bg);
+    padding: 0.3rem 1rem;
+    border-radius: 7px;
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+
+.more{
+    background: var(--gray-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    min-height: 180px;
+    width: 100%;
+}
+
+.more .content{
+    width: 200px;
+}
+
+.more .content button {
+    background: var(--primary-color);
+    color:#fff;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border-radius: 7px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    margin-top: 0.5rem;
+}
+
+.more .content button:hover{
+    background: #ffffff;
+    color:#000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.graph-content{
+    height: 220px;
+}

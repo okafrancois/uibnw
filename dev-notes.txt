@@ -1,0 +1,2 @@
+* For courses list apparition - use  gsap timeline animation
+
