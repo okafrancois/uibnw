@@ -8,37 +8,37 @@ class LearnGraph extends Component {
             data: [
                 {
                     "name": "Mon",
-                    "uv": 100,
+                    "uv": 0,
                     "amt": 2400
                 },
                 {
                     "name": "Tue",
-                    "uv": 3000,
+                    "uv": 1.5,
                     "amt": 2210
                 },
                 {
                     "name": "Wed",
-                    "uv": 2000,
+                    "uv": 2.5,
                     "amt": 2290
                 },
                 {
                     "name": "Thu",
-                    "uv": 2780,
+                    "uv": 1,
                     "amt": 2000
                 },
                 {
                     "name": "Fri",
-                    "uv": 1890,
+                    "uv": 4,
                     "amt": 2181
                 },
                 {
                     "name": "Sat",
-                    "uv": 2390,
+                    "uv": 3,
                     "amt": 2500
                 },
                 {
                     "name": "Sun",
-                    "uv": 3490,
+                    "uv": 2,
                     "amt": 2100
                 }
             ]
@@ -56,7 +56,7 @@ class LearnGraph extends Component {
                    <XAxis dataKey="name" />
                    <YAxis />
                    <Tooltip />
-                   <CartesianGrid stroke="#f5f5f5" />
+                   <CartesianGrid stroke="#f5f5f5" vertical={false}/>
                    <Line type="monotone" dataKey="uv" stroke="#000" yAxisId={0} />
                </LineChart>
            </div>

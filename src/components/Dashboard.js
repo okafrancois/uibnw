@@ -2,12 +2,14 @@ import React, {Component} from 'react';
 import SideMenu from "./SideMenu";
 import "./dashboard.css";
 import illustration from "./src/img/men_illustration.svg"
+import profil_icone from "./src/img/profil-photo.png"
 import book from "./src/img/open-book_icon.svg"
 import search from "./src/img/search-icon.svg"
 import notif from "./src/img/notif_icon.svg"
 import Slider from "./Slider";
 import Filter from "./Filter";
 import LearnGraph from "./LearnGraph";
+import MobileMenu from "./MobileMenu";
 
 class Dashboard extends Component {
     render() {
@@ -16,6 +18,9 @@ class Dashboard extends Component {
                <div className="side-menu">
                    <SideMenu/>
                </div>
+                <div>
+                    <MobileMenu/>
+                </div>
                 <main>
                     <section className="resume">
                         <HelloCard name={"Josh"}/>
@@ -27,7 +32,7 @@ class Dashboard extends Component {
                     </section>
                     <section className={"details"}>
                         <header>
-                            <form  onSubmit={""} className={"search-bar"}>
+                            <form className={"search-bar"}>
                                 <img src={search} alt="icon"/>
                                 <input type={"search"}/>
                             </form>
@@ -35,8 +40,8 @@ class Dashboard extends Component {
                                 <img src={notif} alt="icon"/>
                                 <span className="number">1</span>
                             </div>
-                            <div className="user-menu">
-                                <img src={illustration} alt="photo"/>
+                            <div className="user-photo">
+                                <img src={profil_icone} alt="icone"/>
                             </div>
                         </header>
                         <div className="number-stats">
